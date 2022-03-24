@@ -1,3 +1,5 @@
+<!-- Code based on work done by michalosman, through The Odin Project -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +29,34 @@
     <script src="https://kit.fontawesome.com/6878338fc7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="title">Etch-a-sketch</h1>
+    </header>
+    <main class="main">
+        <div class="settings">
+            <!-- Add the color wheel as an input selecter -->
+            <input type="color" id="colorPicker" value="#333333">
+             <!-- Buttons  -->
+             <button id="colorBtn">Color mode</button>
+             <button id="rainbowBtn">Rainbow mode</button>
+             <button id="eraserBtn">Eraser</button>
+             <button id="clearBtn">Clear</button>
+             <div id="sizeValue" class="size-value">16 x 16</div>
+             <input type="range" id="sizeSlider" value="16" min="1" max="64">
+        </div>
+        
+        <!-- Establish our Grid -->
+        <div id="grid" class="grid"></div>
+    </main>
+    <footer class="footer">
+        <p>
+            Inspired by Michalosman's submission through The Odin Project Curriculum
+        </p>
+        <!-- GitHub Link -->
+        <a href="https://github.com/CPettz" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
